@@ -12,7 +12,7 @@ export default async function LoginPage() {
   }
 
   return (
-    <div className="bg-zinc-900">
+    <div className="bg-zinc-900 bg-[url('/auth-bg.jpg')] bg-fixed bg-cover">
       <div className="grid grid-cols-1 md:grid-cols-2 px-7 md:px-10 mx-auto max-w-screen-2xl">
         <div>Left Side</div>
         <div className="flex flex-col min-h-screen justify-center">

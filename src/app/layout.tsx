@@ -17,7 +17,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang="en">
-      <body className="bg-slate-50">
+      <body className="bg-zinc-900">
         <SessionProvider session={session}>
           <NavigationMenubar />
 

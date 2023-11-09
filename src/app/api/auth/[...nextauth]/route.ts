@@ -9,7 +9,7 @@ import GoogleProvider from "next-auth/providers/google";
 import { MongoDBAdapter } from '@auth/mongodb-adapter';
 import clientPromise from '@/lib/MongoDBAdapter';
 
-
+// mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database>?retryWrites=true&w=majority
 
 export const authOptions: NextAuthOptions = {
 
@@ -59,7 +59,7 @@ export const authOptions: NextAuthOptions = {
 
                 // validate the password
                 const isValidPassword = await bcryptjs.compare(plainPassword, isUserExist?.password)
-                console.log("isValidPassword", isValidPassword);
+                // console.log("isValidPassword", isValidPassword);
                 if (!isValidPassword) {
                     return null
                 }

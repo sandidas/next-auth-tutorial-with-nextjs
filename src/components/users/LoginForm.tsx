@@ -56,7 +56,7 @@ export default function LoginForm() {
         redirect: false,
       });
 
-      console.log("response", response);
+      // console.log("response", response);
       toast.success("Successfully signed in");
       router.push("/dashboard");
       router.refresh();
